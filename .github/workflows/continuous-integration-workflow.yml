@@ -22,7 +22,7 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
-    - name: Run C# tests
+    - name: Test
       run: dotnet test --no-build --verbosity normal
       # Setup Node.js for TypeScript
 
