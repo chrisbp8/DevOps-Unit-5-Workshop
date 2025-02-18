@@ -23,4 +23,4 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Run C# tests
-      run: dotnet test 
+      run: dotnet test --no-build --verbosity normal
