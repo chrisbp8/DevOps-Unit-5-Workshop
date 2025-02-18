@@ -32,10 +32,14 @@ jobs:
           node-version: '20'
 
     - name: Install TypeScript dependencies
-      run: npm ci  # Ensures a clean, reproducible install
+      run: npm ci  
+      
+    # Ensures a clean, reproducible install
 
     - name: Build TypeScript project
-      run: npm run build  # Assumes you have a 'build' script in package.json
+      run: npm run build  
+      
+    # Assumes you have a 'build' script in package.json
 
     - name: Run TypeScript linter
       run: npm run lint  # Assumes you have a 'lint' script in package.json
