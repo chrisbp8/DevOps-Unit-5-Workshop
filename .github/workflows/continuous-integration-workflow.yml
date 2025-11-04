@@ -16,3 +16,9 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
           dotnet-version: '8.0.x'  # .net version to use 
+
+    # Restore dependencies and build C# project
+    - name: Restore dependencies
+      run: dotnet restore
+
+
