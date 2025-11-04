@@ -10,3 +10,9 @@ jobs:
 
     - name: Hello world       # Name of step
       run: echo 'Hello world' # Command to run
+
+    # Setup .NET
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+          dotnet-version: '8.0.x'  # .net version to use 
