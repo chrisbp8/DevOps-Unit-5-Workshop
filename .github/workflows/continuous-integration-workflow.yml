@@ -28,11 +28,6 @@ jobs:
     - name: Tests
       run: dotnet test --no-build --verbosity normal --configuration Release
 
-   # Setup Node.js for TypeScript
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-          node-version: '20'
-
-    - name: Install TypeScript dependencies
-      run: npm ci  
+   #  test  TypeScript
+    - name: TypeScript 
+      run : dotnet test
