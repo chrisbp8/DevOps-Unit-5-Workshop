@@ -21,7 +21,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-  #Build the project 
+    #Build the project 
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
